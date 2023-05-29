@@ -9,13 +9,13 @@ let package = Package(
     products: [
         .library(name: "SwiftyModule", targets: ["SwiftyModule"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/feathercms/feather-core", .branch("dev")),
+    dependencies: [		
+       .package(url: "https://github.com/feathercms/feather-core", .branch("dev")),
         .package(url: "https://github.com/JohnSundell/Splash", from: "0.16.0"),
     ],
     targets: [
         .target(name: "SwiftyModule", dependencies: [
-            .product(name: "Feather", package: "feather-core"),
+            .product(name: "FeatherCore", package: "feather-core"),
             .product(name: "Splash", package: "Splash"),
         ],
         resources: [
