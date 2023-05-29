@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Feather
+import FeatherCore
 import Vapor
 
 struct SwiftyModule: FeatherModule {
